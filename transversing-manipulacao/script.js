@@ -1,8 +1,6 @@
 // Duplique o menu e adicione ele em copy
 const menu = document.querySelector('.menu');
 const menuClone = menu.cloneNode(true);
-console.log(menuClone);
-
 const copy = document.querySelector('.copy');
 
 copy.appendChild(menuClone);
@@ -15,8 +13,7 @@ console.log(faq);
 console.log(faq.nextElementSibling);
 
 // Substitua o conteúdo html de .faq pelo de .animais
-
 const animais = document.querySelector('.animais');
-const elFaq = document.querySelector('.faq');
+const conteudoFaq = document.querySelector('.faq');
 
-elFaq.replaceChild(animais, elFaq);
+faq.innerHTML = animais.innerHTML;
